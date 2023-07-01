@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function demoInternalAlert()
+        {
+            alert("Internal Alert")
+        }
+        function demoInternalconfirm()
+        {
+
+            if(confirm("Are You Sure..?")){ 
+            alert("YES");
+        }
+         else{
+            alert("NOOO");
+         }
+        }
+        function demoInternalprompt(){
+            var fName=prompt("Enter first Name Here...");
+            var lNmae=prompt("Enter last Name Here...");
+            alert(fName+" "+lName);
+            
+        }
+        function bodybggreen(){
+            document.getElementById("D1").style.backgroundColor="green";
+        }
+        function bodybggray(){
+            document.getElementById("D1").style.backgroundColor="gray";
+        }
+        function bodybgdynamic(){
+            document.getElementById("D1").style.backgroundColor="pink";
+        }
+        function divbgdynamic(){
+            document.getElementById("D1").style.backgroundColor="lightyellow";
+        }
+        function bodycp1(){
+            document.body.style.backgroundColor=document.getElementById("cp1").value;
+        }
+        function divbgcp2(){
+            document.getElementById("D1").style.backgroundColor=document.getElementById("cp2").value;s
+        }
+        function demo1(){
+            var a=prompt("enter number1");
+            var b=prompt("Enter number2");
+            if(a>b)
+            {
+                alert(a+"is grater");
+            }
+            else
+            {
+                alert(b+"is grater");
+            }
+          }
+        function demo2(){
+            var i=prompt("Enter the radius for circle");
+            var area;
+            area=3.14*r*r;
+            alert("area of circle is"+""+area);
+          }
+
+    </script>
+    <script src="xyz.js" type="text/javascript"></script>
+    <style type="text/css">
+        body{background-color: rgb(106, 4, 58);}
+        div{background-color: chartreuse;height: 300px;width: 300px;}
+
+    </style>
+</head>
+<body>
+    <div id="D1">
+        Hello Students
+    </div>
+    <hr/>
+    <input type="button" value="Alert Inline" onclick="alert('Hello Guys')"/>
+    <input type="button" value="Confirm Inline" onclick="confirm('Are You Sure..?')"/>
+    <input type="button" value="Prompt Inline" onclick="prompt('Enter First Name here.....')"/>
+    <hr/>
+    <input type="button" value="Alert Internal" onclick="demoInternalAlert()"/>
+    <input type="button" value="Confirm Internal" onclick="demoInternalconfirm()"/>
+    <input type="button" value="Prompt Internal" onclick="demoInternalprompt()"/>
+    <hr/>
+    <input type="button" value="Alert External" onclick="demoExternalAlert()"/>
+    <input type="button" value="Confirm External" onclick="demoExternalconfirm()"/>
+    <input type="button" value="Prompt External" onclick="demoExternalprompt()"/>
+    <hr/>
+    <input type="button" value="body bggreen" onclick="bodybggreen()"/>
+    <input type="button" value="body bg gray" onclick="bodybggray()"/>
+    <hr/>
+    <input type="color" id="cp1" onchange="bodybgcp1()"/>
+    <input type="color" id="cp2" onchange="divbgcp2()"/>
+    <hr/>
+    <input type="button" value="find max number" onclick="demo1()"/>
+    <input type="button" value="find area of circle" onclick="demo2()"/>
+   
+</body>
+</html>
