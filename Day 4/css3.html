@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            height: 200px;
+            width: 200px;
+            transition: 3s;
+            font-size:25px ;
+            font-weight: bold;
+            color:#000000;
+            background-color: rgb(21, 89, 66);
+        }
+        #TranslateDiv :hover
+        {
+            -webkit-transform: translate(100px,100px);
+                      -moz-transform: translate(100px,100px);
+                         -ms-transform: translate(100px,100px);
+                           -o-transform: translate(100px,100px);
+                                 transform: translate(100px,100px);
+                       background-color: olivedrab;
+                         color: bisque;
+
+        }
+        #RotateDiv:hover
+        {
+            -webkit-transform: rotate(360deg);
+                       -moz-transform: rotate(360deg);
+                              -ms-transform: rotate(360deg);
+                                   -o-transform: rotate(360deg);
+                                        transform: rotate(360deg);
+                                        background-color: olivedrab;
+                                        color: bisque;
+            
+            
+
+        }
+        #RotateDiv3D:hover
+        {
+            -webkit-transform: rotate3D(1,1,0,360deg);
+                       -moz-transform: rotate3D(1,1,0,360deg);
+                              -ms-transform: rotate3D(1,1,0,360deg);
+                                   -o-transform: rotate3D(1,1,0,360deg);
+                                        transform: rotate3D(1,1,0,360deg);
+                                        background-color: olivedrab;
+                                        color: bisque;
+            
+
+        }
+        #Skewdiv:hover
+        {
+            -webkit-transform: Skew(45deg);
+                       -moz-transform: Skew(45deg);
+                              -ms-transform: Skew(45deg);
+                                   -o-transform: Skew(45deg);
+                                        transform: Skew(45deg);
+                                        background-color: olivedrab;
+                                        color: bisque;
+            
+            
+        }
+        #ScaleDiv:hover
+        {
+            -webkit-transform: Scale(1.5,0.5);
+                       -moz-transform: Scale(1.5,0.5);
+                              -ms-transform:  Scale(1.5,0.5);
+                                   -o-transform:  Scale(1.5,0.5);
+                                        transform:  Scale(1.5,0.5);
+                                        background-color: olivedrab;
+                                        color: bisque;
+            
+        }
+        #OpacityDiv:hover
+        {
+            Opacity: 0.5;
+        }
+        #RGBADiv:hover
+        {
+            background-color:rgba(128,128,0,0.5);
+        }
+        #BoxShadowDiv:hover
+        {
+            box-shadow: 3px 3px 3px rgb(143, 207, 14);
+        }
+
+        #TextShadowDiv:hover
+        {
+            text-shadow: 3px 3px 3px yellowgreen;
+        }
+        #BorderRadiusDiv:hover
+        {
+            border-radius: 90px;
+        }
+        #OverFlowDiv{overflow:scroll;}
+
+    </style>
+</head>
+<body>
+   <div id="TranslateDiv=">Translate</div><hr/>
+   <div id="RotateDiv">Rotate</div><hr/>
+   <div id="RotateDiv3D">Rotate 3D</div><hr/>
+   <div id="Skewdiv">Skew</div><hr/>
+   <div id="ScaleDiv">Scale</div><hr/>
+   <div id="OpacityDiv">Opacity</div><hr/>
+   <div id="RGBADiv">RGBA</div><hr/>
+   <div id="BoxShadowDiv">Box-Shadow</div><hr/>
+   <div id="TextShadowDiv">Text-Shadow</div><hr/>
+   <div id="BorderRadiusDiv">Border Radius</div><hr/>
+   <div id="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow</div><hr/>
+
+    
+    
+</body>
+</html>
